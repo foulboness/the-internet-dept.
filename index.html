@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f4f4f0">
+  <meta name="description" content="THE INTERNET DEPT. — an independent publication about design, technology, internet culture, and creative life.">
+  <title>THE INTERNET DEPT. — Digital Culture, Documented.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement-bar">
+    <span>INDEPENDENT DIGITAL CULTURE PUBLICATION</span>
+    <span class="announcement-right">ISSUE NO. 001 <span class="status-dot"></span> ONLINE NOW</span>
+  </div>
+
+  <header class="site-header">
+    <a class="wordmark" href="#" data-home aria-label="The Internet Dept. home">THE INTERNET<span>DEPT.</span><sup>®</sup></a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <button class="nav-link active" data-category="All">ALL STORIES <span>08</span></button>
+      <button class="nav-link" data-category="Design">DESIGN</button>
+      <button class="nav-link" data-category="Internet Culture">INTERNET CULTURE</button>
+      <button class="nav-link" data-category="Technology">TECH</button>
+      <button class="nav-link" data-category="Creative Life">CREATIVE LIFE</button>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button" id="search-toggle" aria-label="Open search"><span class="search-glyph"></span></button>
+      <button class="menu-toggle" id="menu-toggle" aria-label="Toggle menu" aria-expanded="false"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <div class="search-panel" id="search-panel" hidden>
+    <div class="search-inner">
+      <label for="search-input">SEARCH THE ARCHIVE</label>
+      <div class="search-field"><input id="search-input" type="search" placeholder="Try “old internet”, design, creativity…" autocomplete="off"><button id="clear-search" aria-label="Clear search">×</button></div>
+      <p id="search-status">SEARCH BY TITLE, CATEGORY, OR KEYWORD.</p>
+    </div>
+  </div>
+
+  <main id="main-content">
+    <section class="hero page-wrap">
+      <div class="hero-meta"><span>VOL. 001 / OCTOBER 2026</span><span>EST. ON THE INTERNET</span></div>
+      <div class="hero-title-row">
+        <h1>THE INTERNET<br><span>IS OUR</span> <em>PLAYGROUND.</em></h1>
+        <div class="hero-stamp"><span>NOTES FROM</span><strong>THE<br>ONLINE<br>WORLD.</strong><span>ISSUE 001 ↗</span></div>
+      </div>
+      <div class="hero-bottom">
+        <p>An independent publication exploring the things we create, consume, collect, and obsess over online.</p>
+        <a href="#latest" class="round-link" aria-label="Explore latest stories">↓</a>
+        <span class="hero-index">DESIGN / CULTURE / TECHNOLOGY / EVERYTHING ELSE</span>
+      </div>
+      <div class="hero-rule"><span>SCROLL TO EXPLORE</span><span>001 — 008</span></div>
+    </section>
+
+    <section class="featured-section page-wrap" id="latest">
+      <div class="section-heading"><div><span class="eyebrow">01 / THE COVER STORY</span><h2>THE LATEST ISSUE<span class="period">.</span></h2></div><span class="section-note">A LITTLE BIT OF EVERYTHING.<br>ALL IN ONE PLACE.</span></div>
+      <article class="cover-story" data-article-id="old-internet">
+        <div class="cover-art cover-art-old" role="img" aria-label="Graphic illustration of a desktop window from the early internet">
+          <div class="window-top"><span>NETSCAPE_NAVIGATOR.exe</span><span>□ ×</span></div>
+          <div class="old-web-content"><span class="old-web-label">WELCOME TO MY</span><strong>HOMEPAGE!</strong><div class="pixel-sun">✳</div><div class="old-web-links"><span>ABOUT ME</span><span>MY LINKS</span><span>GUESTBOOK</span></div><span class="blink-text">✦ YOU ARE VISITOR #000184 ✦</span></div>
+          <span class="art-caption">FIG. 001 / DIGITAL ARCHAEOLOGY</span>
+        </div>
+        <div class="cover-copy">
+          <div class="article-meta"><span>INTERNET CULTURE</span><span>8 MIN READ</span></div>
+          <h3>A LOVE LETTER TO THE OLD INTERNET</h3>
+          <p>Personal websites, pixel graphics, forgotten forums, and the freedom of making things just because. Maybe the web was more fun when it felt like ours.</p>
+          <div class="cover-footer"><span>WORDS BY THE INTERNET DEPT.</span><button class="text-link" data-open-article="old-internet">READ THE STORY <span>↗</span></button></div>
+        </div>
+      </article>
+    </section>
+
+    <section class="stories-section page-wrap" id="stories">
+      <div class="section-heading stories-heading"><div><span class="eyebrow">02 / FROM THE DESK</span><h2>THE STORY INDEX<span class="period">.</span></h2></div><span class="story-count" id="story-count">08 STORIES</span></div>
+      <div class="filter-row" role="group" aria-label="Filter stories by category">
+        <button class="filter-chip active" data-category="All">ALL <span>08</span></button>
+        <button class="filter-chip" data-category="Design">DESIGN</button>
+        <button class="filter-chip" data-category="Internet Culture">INTERNET CULTURE</button>
+        <button class="filter-chip" data-category="Technology">TECHNOLOGY</button>
+        <button class="filter-chip" data-category="Creative Life">CREATIVE LIFE</button>
+      </div>
+      <div class="story-grid" id="story-grid" aria-live="polite"></div>
+      <div class="empty-state" id="empty-state" hidden><span>NO MATCHES FOUND.</span><p>Try another keyword or category.</p><button class="button button-dark" id="reset-filters">RESET THE ARCHIVE ↗</button></div>
+      <div class="archive-footer"><span>YOU'VE REACHED THE END (FOR NOW).</span><span>MORE STORIES ARE ALWAYS IN PROGRESS ↗</span></div>
+    </section>
+
+    <section class="newsletter-section">
+      <div class="newsletter-inner page-wrap">
+        <div><span class="eyebrow">03 / THE OCCASIONAL INBOX VISIT</span><h2>GOOD INTERNET.<br>NO SPAM.</h2><p>A tiny dispatch of things worth opening a new tab for.</p></div>
+        <form id="newsletter-form" class="newsletter-form">
+          <label for="newsletter-email">YOUR EMAIL ADDRESS</label>
+          <div class="newsletter-input"><input id="newsletter-email" type="email" placeholder="you@theinternet.com" required><button type="submit" aria-label="Subscribe">↗</button></div>
+          <span class="form-note" id="newsletter-note">NO NOISE. UNSUBSCRIBE WHENEVER.</span>
+        </form>
+        <span class="newsletter-mark">IN<br>BOX<br>001</span>
+      </div>
+    </section>
+  </main>
+
+  <section class="article-view page-wrap" id="article-view" hidden aria-live="polite">
+    <div class="article-topline"><button class="back-link" id="back-to-archive">← BACK TO THE ARCHIVE</button><span id="article-issue">THE INTERNET DEPT. / 001</span></div>
+    <article id="article-content"></article>
+    <div class="article-end"><span>END OF TRANSMISSION.</span><button class="button button-dark" id="next-story">READ ANOTHER STORY ↗</button></div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="footer-top page-wrap"><a class="wordmark footer-wordmark" href="#" data-home>THE INTERNET<span>DEPT.</span><sup>®</sup></a><p>DOCUMENTING THE DIGITAL WORLD,<br>ONE TAB AT A TIME.</p><a href="#main-content" class="back-top">BACK TO TOP ↑</a></div>
+    <div class="footer-bottom page-wrap"><span>© 2026 THE INTERNET DEPT.</span><span>MADE ON THE INTERNET, FOR THE INTERNET.</span><span>ISSUE 001 / JOHANNESBURG ↔ EVERYWHERE</span></div>
+  </footer>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
